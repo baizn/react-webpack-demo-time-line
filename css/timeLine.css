@@ -1,0 +1,79 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+a {
+  color: hsl(200, 50%, 40%);
+  text-decoration: none;
+}
+
+/**时间轴组件容器**/
+.container {
+    height: 300px;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.container i {
+    position: absolute;
+    top: 6px;
+    right: -7px;
+    color: #ccc;
+}
+
+.time-ul {
+    listStyle: none;
+    position: absolute;
+    margin: 50px;
+    width: 80%;
+}
+
+/*时间点容器**/
+.time-container {
+    float: left;
+    list-style: none;
+    height: 30px;
+}
+
+/**日期*/
+.time-container span {
+    position: absolute;
+    top: 30px;
+    margin-left: -30px;
+}
+
+/**时间点*/
+.time-point {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 100px;
+    border: 2px solid #2db7f5
+}
+
+/**时间线*/
+.time-line {
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    z-index: 2;
+}
+
+/**显示的内容*/
+.time-point-content {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background: #ccc;
+    opacity: 0.5;
+    margin-top: -82px;
+    margin-left: -50px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 15px;
+}
